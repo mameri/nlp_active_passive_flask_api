@@ -1,7 +1,7 @@
 # A brief description of the project
 
-In this project, we use the power of machine learning technique to classify the
-sentences into active and passive.
+In this project, we use the power of machine learning techniques to classify the
+sentences into active or passive.
 
 ## Machine learning
 
@@ -9,17 +9,17 @@ To perform the classification task, we use the Naive Bayes algorithm.
 The training data comes from the "2nd_Gore-Bush.txt" file. 
 Since the data is not labeled, in the first stage, we use the parts of speech
 tags. 
-The sentence is tagged passive if a past participle verb succeeds by a be form.
+The sentence is tagged passive if a past participle verb succeeds by a "to be" form.
 
 Naive Bayes algorithm requires an input feature that specifies the required
 information.
 Since we only need grammatical representation for this task, for each sentence
 parts of speech are extracted. 
-If a verb is in the be form, that part is replaced with the "BE" tag.
+If a verb is in the "to be" form, that tag is replaced with the "BE" tag.
 
 The model consists of a count vectorizer followed by a Bayesian classifier.
 
- the experiments are conducted over five folds
+The experiments are conducted over five folds
 of cross-validation To select the best hyperparameters.
 Then the best model based on the f1 measure is stored to be used for the
 prediction.

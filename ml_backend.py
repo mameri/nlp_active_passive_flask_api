@@ -120,7 +120,7 @@ if __name__ == "__main__":
         model = create_model(training_file_name)
 
         evaluate_mode_on_file(model, test_file_name)
-        evaluate_mode_on_file(model, training_file_name)
+        #evaluate_mode_on_file(model, training_file_name)
 
 
 

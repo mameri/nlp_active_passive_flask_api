@@ -8,8 +8,8 @@ def test_tokenize(get_token_file, get_token_text):
 
 def test_preprocess_sentence(get_token_text):
 
-    assert (preprocess_sentence(get_token_text[0])) == ('DT VBZ DT JJ NN', 0)
-    assert (preprocess_sentence(get_token_text[1])) == ('PRP VBZ VBN IN DT NN', 1)
+    assert (preprocess_sentence(get_token_text[0])) == ('DT BE DT JJ NN', 0)
+    assert (preprocess_sentence(get_token_text[1])) == ('PRP BE VBN IN DT NN', 1)
 
 def test_extract_tags(get_token_text):
     data , labels = extract_tags(get_token_text)
